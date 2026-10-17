@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# dbt artifacts and logs
+netflix_local/target/
+netflix_local/dbt_packages/
+netflix_local/logs/
+target/
+dbt_packages/
+logs/
+
+# Data and environment
+data/
+*.csv
+!netflix_local/seeds/*.csv
+.env
+.env.*
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
